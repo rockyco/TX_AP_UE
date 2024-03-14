@@ -1,0 +1,2025 @@
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 14:36:12 AEDT 2024
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute     set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.97 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.1 sec.
+Execute     create_clock -period 300MHz 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz 
+Execute       ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute       ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute     cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 14:37:29 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 1.15 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.34 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.47 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.18 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.31 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 1.17 sec.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 17.56 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 14.29 seconds. CPU system time: 1.13 seconds. Elapsed time: 17.56 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; error code: 1; 19.37 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 14:54:13 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.99 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.12 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.2 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.13 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.25 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 1.14 sec.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 1.4 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.15 seconds. CPU system time: 0.12 seconds. Elapsed time: 1.4 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; error code: 1; 2.88 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 14:57:41 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 1 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.13 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.22 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.25 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 14.65 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.63 seconds. CPU system time: 0.96 seconds. Elapsed time: 14.65 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 16.15 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 15:00:01 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 1.04 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.18 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.26 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.13 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.25 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 0.24 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.12 seconds. CPU system time: 0.11 seconds. Elapsed time: 0.24 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 1.79 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 15:11:42 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.98 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.11 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.19 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.24 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 0.29 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.13 seconds. CPU system time: 0.16 seconds. Elapsed time: 0.29 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 1.75 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 15:38:05 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 1 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.15 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.23 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.15 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.28 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 2.81 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.46 seconds. CPU system time: 0.33 seconds. Elapsed time: 2.81 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 4.34 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 15:39:56 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.98 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.11 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.2 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.24 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 0.29 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.14 seconds. CPU system time: 0.14 seconds. Elapsed time: 0.29 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 1.75 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 16:10:38 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.98 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.11 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.21 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.24 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 14.97 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.77 seconds. CPU system time: 1.04 seconds. Elapsed time: 14.97 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 16.45 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 17:19:20 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.99 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.14 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.21 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.24 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 14.97 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.88 seconds. CPU system time: 0.9 seconds. Elapsed time: 14.97 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 16.44 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 17:25:30 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.96 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.1 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.17 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.23 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 14.61 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.55 seconds. CPU system time: 1 seconds. Elapsed time: 14.61 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; error code: 1; 16.05 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 17:27:57 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.95 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.08 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.18 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.24 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 14.41 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.4 seconds. CPU system time: 0.98 seconds. Elapsed time: 14.41 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 15.85 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 21:25:17 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.98 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.11 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.19 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.13 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.26 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 12.75 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 11.89 seconds. CPU system time: 0.78 seconds. Elapsed time: 12.75 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 14.22 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 21:30:35 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.95 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.08 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.15 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.24 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 7.56 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.97 seconds. CPU system time: 0.55 seconds. Elapsed time: 7.56 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; error code: 1; 9.28 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 21:32:47 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.98 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.11 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.19 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.24 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 7.46 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.91 seconds. CPU system time: 0.54 seconds. Elapsed time: 7.46 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; error code: 1; 8.91 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 21:58:26 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.96 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.09 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.16 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.25 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 14.92 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.89 seconds. CPU system time: 1 seconds. Elapsed time: 14.92 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 16.35 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Mon Mar 11 22:33:02 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.96 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.09 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.17 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.24 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 6.79 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.24 seconds. CPU system time: 0.56 seconds. Elapsed time: 6.79 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 8.23 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Tue Mar 12 10:52:18 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.98 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.11 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.23 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.24 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 6.43 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.02 seconds. CPU system time: 0.41 seconds. Elapsed time: 6.43 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 7.94 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Tue Mar 12 10:58:01 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 1.05 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.18 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.27 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.25 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 14.87 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.76 seconds. CPU system time: 1.11 seconds. Elapsed time: 14.87 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 16.4 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Tue Mar 12 11:12:05 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.96 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.1 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.2 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.25 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 5.59 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 5.12 seconds. CPU system time: 0.36 seconds. Elapsed time: 5.6 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; error code: 1; 7.08 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Tue Mar 12 11:22:41 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.96 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.09 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.18 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.11 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.24 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 6.66 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.09 seconds. CPU system time: 0.57 seconds. Elapsed time: 6.66 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 8.1 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Tue Mar 12 11:29:13 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.97 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.1 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.18 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.24 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 12.56 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 11.68 seconds. CPU system time: 0.83 seconds. Elapsed time: 12.56 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 14 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Tue Mar 12 11:30:56 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.97 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.09 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.17 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.11 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.23 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 14.49 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.49 seconds. CPU system time: 0.99 seconds. Elapsed time: 14.49 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 15.91 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Tue Mar 12 11:33:35 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.98 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.11 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.18 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.13 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.25 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -setup -quiet 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     send_msg_by_id INFO @200-2035@ 
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 0.23 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.12 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.23 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 1.7 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Tue Mar 12 11:35:35 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.97 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.1 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.17 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.13 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.25 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 14.55 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 13.56 seconds. CPU system time: 0.94 seconds. Elapsed time: 14.55 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; error code: 1; 16 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Tue Mar 12 11:41:54 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.98 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.11 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.2 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.26 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 5.7 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 5.24 seconds. CPU system time: 0.44 seconds. Elapsed time: 5.7 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; error code: 1; 7.18 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1 opened at Tue Mar 12 11:45:44 AEDT 2024
+Execute     ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     ap_set_clock -name default -uncertainty 0.417 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+Execute     set_part xczu28dr-ffvg1517-2-e 
+Execute       create_platform xczu28dr-ffvg1517-2-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Command       create_platform done; 0.97 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.11 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_rtl -reset=control 
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+Execute     config_rtl -reset=control 
+Command   open_solution done; 1.18 sec.
+Execute   set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+Execute     create_platform xczu28dr-ffvg1517-2-e -board  
+Command     create_platform done; 0.12 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.25 sec.
+Execute   create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+Execute   config_rtl -reset control 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+Execute   set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 6.65 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.11 seconds. CPU system time: 0.52 seconds. Elapsed time: 6.65 seconds; current allocated memory: 0.000 MB.
+Command ap_source done; 8.1 sec.
+Execute cleanup_all 

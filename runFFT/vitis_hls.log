@@ -1,0 +1,44 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'jielei' on host 'UTS-HP-WS' (Linux_x86_64 version 6.5.0-25-generic) on Tue Mar 12 11:45:44 AEDT 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/jielei/Projects/UTS/TX_AP_UE/runFFT'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script '/home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source /home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1/csim.tcl
+INFO: [HLS 200-1510] Running: open_project proj_runFFT 
+INFO: [HLS 200-10] Opening project '/home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT'.
+INFO: [HLS 200-1510] Running: set_top runFFT 
+INFO: [HLS 200-1510] Running: add_files fft_top.cpp 
+INFO: [HLS 200-10] Adding design file 'fft_top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files runFFT.cpp 
+INFO: [HLS 200-10] Adding design file 'runFFT.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb goldenFFT.txt -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'goldenFFT.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb data4FFT.txt -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'data4FFT.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb runFFT_tb.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'runFFT_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/jielei/Projects/UTS/TX_AP_UE/runFFT/proj_runFFT/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.417ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu28dr-ffvg1517-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+INFO: [HLS 200-1510] Running: set_part xczu28dr-ffvg1517-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../runFFT_tb.cpp in debug mode
+   Generating csim.exe
+TEST PASSED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 64
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 6.11 seconds. CPU system time: 0.52 seconds. Elapsed time: 6.65 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 8.14 seconds. Total CPU system time: 0.75 seconds. Total elapsed time: 8.78 seconds; peak allocated memory: 311.453 MB.

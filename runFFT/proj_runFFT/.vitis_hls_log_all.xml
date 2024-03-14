@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:42:01.803+1100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.611+1100"/>
+        <logs message="ERROR: i=3, j=0, k=63, outData=-0.003418-0.020020i, goldenData=-0.003418-0.020050i&#xA;TEST FAILED" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.609+1100"/>
+        <logs message="ERROR: i=3, j=0, k=62, outData=-0.028931+0.013062i, goldenData=-0.028931+0.013092i" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.577+1100"/>
+        <logs message="ERROR: i=3, j=0, k=61, outData=-0.041809+0.037964i, goldenData=-0.041809+0.037933i" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.576+1100"/>
+        <logs message="ERROR: i=3, j=0, k=60, outData=-0.032959+0.040100i, goldenData=-0.032959+0.040131i" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.574+1100"/>
+        <logs message="ERROR: i=3, j=0, k=59, outData=-0.002380+0.015747i, goldenData=-0.002411+0.015717i" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.573+1100"/>
+        <logs message="ERROR: i=3, j=0, k=58, outData=0.039368-0.026062i, goldenData=0.039398-0.026093i" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.572+1100"/>
+        <logs message="ERROR: i=3, j=0, k=57, outData=0.075684-0.067505i, goldenData=0.075714-0.067505i" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.571+1100"/>
+        <logs message="ERROR: i=3, j=0, k=56, outData=0.091064-0.091125i, goldenData=0.091064-0.091095i" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.569+1100"/>
+        <logs message="ERROR: i=3, j=0, k=54, outData=0.041931-0.063354i, goldenData=0.041901-0.063324i" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.568+1100"/>
+        <logs message="ERROR: i=3, j=0, k=53, outData=-0.004517-0.030457i, goldenData=-0.004547-0.030457i" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.567+1100"/>
+        <logs message="ERROR: i=3, j=0, k=52, outData=-0.044922-0.005676i, goldenData=-0.044891-0.005676i" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.565+1100"/>
+        <logs message="ERROR: i=3, j=0, k=51, outData=-0.067810+0.001770i, goldenData=-0.067810+0.001740i" projectName="proj_runFFT" solutionName="solution1" date="2024-03-12T11:35:51.564+1100"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

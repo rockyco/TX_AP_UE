@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fft_top.cpp" path="/home/jielei/Projects/UTS/TX_AP_UE/runFFT/fft_top.cpp"/>
+    <originFiles name="runFFT.cpp" path="/home/jielei/Projects/UTS/TX_AP_UE/runFFT/runFFT.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="goldenFFT.txt" path="/home/jielei/Projects/UTS/TX_AP_UE/runFFT/goldenFFT.txt"/>
+    <originFiles name="data4FFT.txt" path="/home/jielei/Projects/UTS/TX_AP_UE/runFFT/data4FFT.txt"/>
+    <originFiles name="runFFT_tb.cpp" path="/home/jielei/Projects/UTS/TX_AP_UE/runFFT/runFFT_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
