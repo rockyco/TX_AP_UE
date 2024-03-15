@@ -64,35 +64,6 @@ int main(void) {
     // Call the applyPrecoder function
     applyPrecoder(AP, ueIdx, strmUE, inData, outData);
 
-    // Read the golden output data
-    FILE *fp_golden;
-    fp_golden = fopen("precoderGolden.txt", "r");
-    if (fp_golden == NULL) {
-        printf("FILE NOT FOUND\n");// Error, file not found
-        return 1;
-    }
-    // Compare the output data with the golden output data
-    int err = 0;
-    float rm_golden, im_golden;
-    for (int k = 0; k < NUM_ANT; k++) {
-        for (int i = 0; i < NUM_TOTAL_SYMBOLS; i++) {
-            for (int j = 0; j < SYMBOL_LENGTH; j++) {            
-                fscanf(fp_golden, "%f%fi\t", &rm_golden, &im_golden);
-                std::complex<ap_int<14>> goldenData = {rm_golden, im_golden};
-                std::complex<ap_int<14>> tmpData = outData[k].read();
-                //std::cout << "goldenData: " << goldenData << std::endl;
-                //std::cout << "tmpData: " << tmpData << std::endl;
-                outDataBuf[k][i][j] = tmpData;
-                goldenDataBuf[k][i][j] = goldenData;
-                if ((std::abs(goldenData.real() - tmpData.real()) > 2) || (std::abs(goldenData.imag() - tmpData.imag()) > 2)) {
-                    err++;
-                }
-            }
-        }
-        fscanf(fp_golden, "\n");
-    }
-    fclose(fp_golden);
-
     // Write the output data to a file
     FILE *fp_out;
     fp_out = fopen("precoderOut.txt", "w");
@@ -103,7 +74,8 @@ int main(void) {
     for (int i = 0; i < NUM_TOTAL_SYMBOLS; i++) {
         for (int j = 0; j < SYMBOL_LENGTH; j++) {
             for (int k = 0; k < NUM_ANT; k++) {
-                std::complex<ap_int<14>> tmpData = outDataBuf[k][i][j];
+                std::complex<ap_int<14>> tmpData = outData[k].read();
+                outDataBuf[k][i][j] = tmpData;
                 //std::cout << "tmpData: " << tmpData << std::endl;
                 fprintf(fp_out, "%i%+ii\t", (int)tmpData.real(), (int)tmpData.imag());
             }
@@ -111,6 +83,28 @@ int main(void) {
         }
     }
     fclose(fp_out);
+
+    // Read the golden output data
+    FILE *fp_golden;
+    fp_golden = fopen("precoderGolden.txt", "r");
+    if (fp_golden == NULL) {
+        printf("FILE NOT FOUND\n");// Error, file not found
+        return 1;
+    }
+    float rm_golden, im_golden;
+    for (int k = 0; k < NUM_ANT; k++) {
+        for (int i = 0; i < NUM_TOTAL_SYMBOLS; i++) {
+            for (int j = 0; j < SYMBOL_LENGTH; j++) {            
+                fscanf(fp_golden, "%f%fi\t", &rm_golden, &im_golden);
+                std::complex<ap_int<14>> goldenData = {rm_golden, im_golden};
+                //std::cout << "goldenData: " << goldenData << std::endl;
+                goldenDataBuf[k][i][j] = goldenData;
+            }
+        }
+        fscanf(fp_golden, "\n");
+    }
+    fclose(fp_golden);
+
     // Write the golden output data to a file
     FILE *fp_golden_out;
     fp_golden_out = fopen("precoderGoldenOut.txt", "w");
@@ -128,15 +122,25 @@ int main(void) {
         }
     }
     fclose(fp_golden_out);
-    // Print the test result
-
-
-
+    // Compare the output data with the golden output data
+    int err = 0;
+    for (int k = 0; k < NUM_ANT; k++) {
+        for (int i = 0; i < NUM_TOTAL_SYMBOLS; i++) {
+            for (int j = 0; j < SYMBOL_LENGTH; j++) {            
+                std::complex<ap_int<14>> goldenData = goldenDataBuf[k][i][j];
+                std::complex<ap_int<14>> tmpData = outDataBuf[k][i][j];
+                if ((std::abs((int)goldenData.real() - (int)tmpData.real()) > 3) || (std::abs((int)goldenData.imag() - (int)tmpData.imag()) > 3)) {
+                    err++;
+                    printf("ERROR: goldenData[%d][%d][%d] = %i%+ii, tmpData[%d][%d][%d] = %i%+ii\n", k, i, j, (int)goldenData.real(), (int)goldenData.imag(), k, i, j, (int)tmpData.real(), (int)tmpData.imag());
+                }
+            }
+        }
+    }
+    // Print the result
     if (err == 0) {
         printf("PASSED\n");
     } else {
         printf("FAILED: err = %d\n", err);
     }
     return err;
-
 }

@@ -88,5 +88,10 @@ int main(void) {
             }
         }
     }
-    return 0;
+    if (err == 0) {
+        printf("Test passed\n");
+    } else {
+        printf("Test failed\n");
+    }
+    return err;
 }
